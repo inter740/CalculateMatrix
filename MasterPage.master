@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:Panel ID="Panel2" runat="server" Visible="False">
+            <table width="600px">
+                <tr>
+                    <td>
+                        <div style="background: #DDDDDD; padding: 10px">
+                            Матрица А<br>
+                            <asp:TextBox ID="textBox1_matrixA" runat="server"></asp:TextBox>
+                            <asp:TextBox ID="textBox2_matrixA" runat="server"></asp:TextBox>
+                            <asp:TextBox ID="textBox3_matrixA" runat="server"></asp:TextBox>
+                            </br>
+                            <asp:TextBox ID="textBox4_matrixA" runat="server"></asp:TextBox>
+                            <asp:TextBox ID="textBox5_matrixA" runat="server"></asp:TextBox>
+                            <asp:TextBox ID="textBox6_matrixA" runat="server"></asp:TextBox>
+                            </br>
+                            <asp:TextBox ID="textBox7_matrixA" runat="server"></asp:TextBox>
+                            <asp:TextBox ID="textBox8_matrixA" runat="server"></asp:TextBox>
+                            <asp:TextBox ID="textBox9_matrixA" runat="server"></asp:TextBox>
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                                </asp:ContentPlaceHolder>
+                                            </td>
+                                        </tr>
+                                    </table>
+                            </br></br>
+                        </div>
+                    </td>
+                </tr>
+            </table></br>
+
+        </asp:Panel>
+
+        <asp:Panel ID="Panel1" runat="server" Visible="False">
+            <asp:Button ID="CalculateBtn" runat="server" Text="Calculate" OnClick="CalculateBtn_Click" />
+            <br></br>
+            Результат<br />
+            <asp:TextBox runat="server" ID="textBox1_matrixC"></asp:TextBox>
+            <asp:TextBox runat="server" ID="textBox2_matrixC"></asp:TextBox>
+            <asp:TextBox runat="server" ID="textBox3_matrixC"></asp:TextBox>
+            <br>
+            <asp:TextBox runat="server" ID="textBox4_matrixC"></asp:TextBox>
+            <asp:TextBox runat="server" ID="textBox5_matrixC"></asp:TextBox>
+            <asp:TextBox runat="server" ID="textBox6_matrixC"></asp:TextBox>
+            <br>
+            <asp:TextBox runat="server" ID="textBox7_matrixC"></asp:TextBox>
+            <asp:TextBox runat="server" ID="textBox8_matrixC"></asp:TextBox>
+            <asp:TextBox runat="server" ID="textBox9_matrixC"></asp:TextBox>
+            <br></br>
+
+            <a href="Default.aspx">HOME</a>
+        </asp:Panel>
+
+    </form>
+</body>
+</html>
